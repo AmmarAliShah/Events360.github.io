@@ -8,6 +8,28 @@
 		<meta name="keywords" content="" />
 		<meta name="author" content="Ammar Shah" />
 
+		<style>
+			.demo-1 {
+				--color-text: black;
+				--color-bg: #FF2400;
+				--color-link: #FF2400;
+				--color-link-hover: #FF2400;
+				--color-info: #FF2400;
+			}
+
+			a {
+				text-decoration: none;
+				color: var(--color-link);
+				outline: none;
+			}
+
+			a:hover,
+			a:focus {
+				color: var(--color-link-hover);
+				outline: none;
+			}
+		</style>
+
 		<!--Fav icon-->
 		<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
@@ -18,8 +40,7 @@
 		<meta name="theme-color" content="#ffffff">
 
 		<!--Home Page CSS-->
-		<link rel="stylesheet" type="text/css" href="home/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="home/css/glitch-slideshow.css" />
+		<link rel="stylesheet" type="text/css" href="css/glitch-slideshow.css" />
 
 							<!-- Navigation CSS START-->
     <link rel="stylesheet" href="nav/style.css">
@@ -27,8 +48,6 @@
     <link rel="stylesheet" href="nav/namari-color.css">
     <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="nav/font-awesome.min.css">
-    <!-- Animate CSS-->
-    <link href="nav/animate.css" rel="stylesheet" type="text/css">
 							<!-- Navigation CSS END-->
     <!--Font Link-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -85,6 +104,7 @@
             </div>
         </div><!--End of Header-->
 			</header>
+
 			<div class="content">
 				<div class="slides slides--fullscreen effect-1">
 					<div class="slide slide--current">

@@ -1,0 +1,35 @@
+.demo-1 {
+	--color-text: black;
+	--color-bg: #FF2400;
+	--color-link: #FF2400;
+	--color-link-hover: #FF2400;
+	--color-info: #FF2400;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+@media screen and (max-width: 65em) {
+	body {
+		border: 0 !important;
+	}
+	.content {
+		flex-direction: column;
+		height: auto;
+		min-height: 0;
+		padding-bottom: 10em;
+	}
+	.demo-1 {
+		--color-link-hover: #fff;
+		--color-info: #fff;
+	}
+}
