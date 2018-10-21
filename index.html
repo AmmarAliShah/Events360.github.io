@@ -8,41 +8,42 @@
 		<meta name="keywords" content="" />
 		<meta name="author" content="Ammar Shah" />
 
+		<!--Fav icon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+		<link rel="manifest" href="fav/site.webmanifest">
+		<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<!--Home Page CSS-->
 		<link rel="stylesheet" type="text/css" href="home/css/base.css" />
 		<link rel="stylesheet" type="text/css" href="home/css/glitch-slideshow.css" />
-
-		<!-- Main NAV CSS -->
+							<!-- Navigation CSS START-->
     <link rel="stylesheet" href="nav/style.css">
-
     <!-- Namari Color CSS -->
     <link rel="stylesheet" href="nav/namari-color.css">
-
     <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="nav/font-awesome.min.css">
-
     <!-- Animate CSS-->
     <link href="nav/animate.css" rel="stylesheet" type="text/css">
-
-    <!--Google Webfonts-->
+							<!-- Navigation CSS END-->
+    <!--Font Link-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-		<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
-
-		<!-- SITE WIDE RESET STYLES -->
-		<!--<link rel="stylesheet" type="text/css" href="_css\siteWideStyles.css" />-->
 
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
+
 	<body class="demo-1 loading">
 		<main>
-
 			<header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
 				<div id="header" class="nav-collapse">
 					<div class="row clearfix">
 						<div class="col-1">
 							<div id="logo">
-								<img src="img/logo.png" id="banner-logo" alt=""/>
-								<img src="img/logo.png" id="navigation-logo" alt=""/>
+								<a href="index.html"><img src="img/logo.png" id="banner-logo" alt=""/></a>
+								<a href="index.html"><img src="img/logo.png" id="navigation-logo" alt=""/></a>
 							</div>
 							<aside>
 								<ul class="social-icons">
@@ -52,7 +53,7 @@
 										</a>
 									</li>
                   <li>
-                      <a target="_blank" title="Instagram" href="http://www.instagram.com/events360.hs">
+                      <a target="_blank" title="Instagram" href="http://www.instagram.com/events360hs">
                           <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
                       </a>
                   </li>
@@ -83,7 +84,6 @@
             </div>
         </div><!--End of Header-->
 			</header>
-
 			<div class="content">
 				<div class="slides slides--fullscreen effect-1">
 					<div class="slide slide--current">
@@ -107,8 +107,9 @@
 				</nav>
 			</div>
 		</main>
-		<script src="home/js/imagesloaded.pkgd.min.js"></script>
-		<script src="home/js/demo.js"></script>
-		<script src="home/js/demo1.js"></script>
+
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/demo1.js"></script>
 	</body>
 </html>
