@@ -2329,3 +2329,27 @@ blockquote {
     }
 
 }
+
+#header {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.demo-1 {
+  --color-text: black;
+  --color-bg: #FF2400;
+  --color-link: #FF2400;
+  --color-link-hover: #FF2400;
+  --color-info: #FF2400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+  outline: none;
+}
