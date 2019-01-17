@@ -546,11 +546,11 @@ section {
 /* Responsive Nav Styling */
 
 #nav-trigger {
-  display: none;
+    display: none;
     text-align: right;
 }
 
-#nav-trigger {
+#nav-trigger span {
     display: inline-block;
     width: 38px;
     height: 71px;
@@ -567,16 +567,38 @@ section {
     transition: all 0.3s ease-out;
 }
 
-#nav-trigger:after {
+#nav-trigger span:after {
+    font-family: "fontAwesome";
     display: inline-block;
     width: 38px;
     height: 71px;
     line-height: 75px;
     text-align: center;
+    content: "\f0c9";
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
 
+#nav-trigger span.open:after {
+    content: "\f00d";
+}
+
+#nav-trigger span:hover, .nav-solid #nav-trigger span.open:hover, .nav-solid #nav-trigger span:hover {
+    opacity: 0.6;
+}
+
+#nav-trigger span.open, #nav-trigger span.open:hover {
+    color: #111;
+}
+
+.nav-solid #nav-trigger span.open:hover {
+    color: #999;
+}
+
+.nav-solid #nav-trigger span {
+    color: #999;
+    opacity: 1;
+}
 
 nav#nav-mobile {
     position: relative;
@@ -621,7 +643,7 @@ nav#nav-mobile li:last-child {
 nav#nav-mobile a {
     display: block;
     padding: 12px 0;
-    color: black;
+    color: #333;
     width: 100%;
     height: auto;
     line-height: normal;
