@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2018, Codrops
  * http://www.codrops.com
  */
@@ -131,7 +131,7 @@
         blobs.push(blob);
         blob.intro();
     });
-    
+
     DOM.content = document.querySelector('.content--reveal');
     DOM.contentInner = Array.from(DOM.content.querySelectorAll('.content__inner'), (el) => {
         charming(el);
@@ -139,7 +139,7 @@
     });
     DOM.ctrlBack = DOM.content.querySelector('.content__close');
     DOM.links = Array.from(document.querySelectorAll('.menu > .menu__item'));
-    
+
     DOM.links.forEach((link, pos) => {
         link.style.pointerEvents = 'none';
         charming(link);
@@ -153,6 +153,7 @@
             complete: () => {
                 link.style.pointerEvents = 'auto';
                 link.classList.add('menu__item--showDeco');
+                link.classList.add('last__item--showDeco');
             }
         });
 
@@ -176,6 +177,7 @@
             begin: () => DOM.links.forEach(link => {
                 link.style.pointerEvents = 'none';
                 link.classList.remove('menu__item--showDeco');
+                link.classList.remove('last__item--showDeco');
             })
         });
 
@@ -201,7 +203,7 @@
     const close = () => {
         if ( !this.isOpen ) return;
         this.isOpen = false;
-        
+
         const contentInner = DOM.contentInner[current];
         anime({
             targets: [contentInner.querySelectorAll('.content__title > span'), contentInner.querySelectorAll('.content__subtitle > span'), DOM.ctrlBack],
@@ -227,6 +229,7 @@
                 complete: () => DOM.links.forEach(link => {
                     link.style.pointerEvents = 'auto';
                     link.classList.add('menu__item--showDeco');
+                    link.classList.add('last__item--showDeco');
                 })
             });
         });

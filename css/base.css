@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-  background: #272526;
-  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(115deg, rgba(0, 0, 0, 1) 5%,rgba(255, 0, 0,1) 95%);
+  font-family: "Times New Roman", Times, serif;
   color: #fff;
 }
 
@@ -13,9 +13,6 @@ body {
 .intro-heading {
   font-weight: bold;
   font-size: 3em;
-  text-decoration: underline;
-  text-decoration-style: double;
-  text-decoration-color: #fff473;
 }
 
 .sub-heading {
