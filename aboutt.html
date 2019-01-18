@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>About | Events360 - Design & Management</title>
 		<meta name="description" content="" />
+		<meta name="keywords" content="" />
 		<meta name="author" content="Ammar Shah" />
 
-		<link rel="stylesheet" href="css/aboutt.css">
-		<script>
-			document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
-		</script>
+		<link rel="stylesheet" type="text/css" href="aboutt/css/base.css" />
+		<link rel="stylesheet" href="css/nav-a.css">
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 		<style>
 			.linkss {
 				border: 1px black solid;
@@ -20,12 +20,13 @@
 		</style>
 	</head>
 	<body class="demo-1">
+
 		<header>
 			<a href="index.html"><img class="logo" src="img/logo.png"/></a>
-			<div class="nav">
+			<div class="nav-mobile">
 				<label for="toggle">&#9776;</label>
 				<input type="checkbox" id="toggle"/>
-				<div class="menu">
+				<div class="menu-mobile">
 					<a href="index.html">Home</a>
 					<a href="aboutt.html">About</a>
 					<a href="gallery.html">Gallery</a>
@@ -36,9 +37,10 @@
 				</div>
 			</div>
 		</header>
+
 		<main>
 			<div class="content">
-				<nav class="lnk">
+				<nav class="menu">
 					<a href="#" class="menu__item">WHO &nbsp; WE&nbsp; ARE?</a>
 					<a href="#" class="menu__item">Our&nbsp; Mission</a>
 					<a href="#" class="menu__item">Our&nbsp; Essence</a>
