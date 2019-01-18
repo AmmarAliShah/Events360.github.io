@@ -65,3 +65,22 @@ body {
   font-size: 16px;
   padding: 16px 32px;
 }
+
+#pageTitle,
+#pageContent {
+  padding-top: 5em;
+}
+
+#pageContent li {
+  list-style: none;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 18px;
+}
+
+#pageContent span {
+  color: red;
+  font-weight: bold;
+  line-height: 3em;
+  font-size: 20px;
+}
