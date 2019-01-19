@@ -138,7 +138,7 @@
         return el;
     });
     DOM.ctrlBack = DOM.content.querySelector('.content__close');
-    DOM.links = Array.from(document.querySelectorAll('.menu > .menu__item'));
+    DOM.links = Array.from(document.querySelectorAll('.menu > .menu__item, .menu > .last__item'));
 
     DOM.links.forEach((link, pos) => {
         link.style.pointerEvents = 'none';
@@ -153,7 +153,6 @@
             complete: () => {
                 link.style.pointerEvents = 'auto';
                 link.classList.add('menu__item--showDeco');
-                link.classList.add('last__item--showDeco');
             }
         });
 
@@ -177,7 +176,6 @@
             begin: () => DOM.links.forEach(link => {
                 link.style.pointerEvents = 'none';
                 link.classList.remove('menu__item--showDeco');
-                link.classList.remove('last__item--showDeco');
             })
         });
 
@@ -229,7 +227,6 @@
                 complete: () => DOM.links.forEach(link => {
                     link.style.pointerEvents = 'auto';
                     link.classList.add('menu__item--showDeco');
-                    link.classList.add('last__item--showDeco');
                 })
             });
         });

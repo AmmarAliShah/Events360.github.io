@@ -5,31 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>About | Events360 - Design & Management</title>
 		<meta name="description" content="" />
-		<meta name="keywords" content="" />
 		<meta name="author" content="Ammar Shah" />
+
 
 		<link rel="stylesheet" type="text/css" href="aboutt/css/base.css" />
 		<link rel="stylesheet" href="css/nav-a.css">
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+
 		<style>
 			.linkss {
 				border: 1px black solid;
 				padding: 10px;
 				background: white;
 			}
-			.wwd {
-
-			}
-			#whatTitle {
-				font-size: 3em;
-			}
-			#whatContent {
-
-			}
 		</style>
 	</head>
 	<body class="demo-1">
-
 		<header>
 			<a href="index.html"><img class="logo" src="img/logo.png"/></a>
 			<div class="nav-mobile">
@@ -54,8 +46,8 @@
 					<a href="#" class="menu__item">Our&nbsp; Mission</a>
 					<a href="#" class="menu__item">Our&nbsp; Essence</a>
 					<a href="#" class="menu__item">Our&nbsp; Vibe</a>
-					<a href="#" class="menu__item">Our&nbsp; Team</a>
-					<a href="wedo.html" class="last__item">What&nbsp; We&nbsp; Do</a>
+					<a href="#" class="menu__item" onclick="location.href='about.html';">Our&nbsp; Team</a>
+					<a href="#" class="menu__item" onclick="location.href='wedo.html';">What&nbsp; We&nbsp; Do</a>
 				</nav>
 				<svg class="scene" width="1440" height="800" preserveAspectRatio="xMinYMid slice" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
 					<defs>
@@ -163,9 +155,10 @@
 					<h2 class="content__title">Our Team</h2>
 					<a href="about.html" style="color: black"><span class="linkss">Meet the team behind Events360</span></a>
 				</div>
-				<!-- <div class="content__inner wwd">
-					<h2 class="content__title" id="whatTitle">What We Do</h2>
-				</div> -->
+				<div class="content__inner">
+					<h2 class="content__title">What We Do</h2>
+					<button class="linkss"><a href="wedo.html" style="color: black">Learn What We Do at Events360</a></button>
+				</div>
 				<button class="content__close"><svg class="icon icon--arrowback"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrowback"></use></svg></button>
 			</div>
 		</main>

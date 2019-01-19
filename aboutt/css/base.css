@@ -417,7 +417,6 @@ main {
 }
 
 .last__item {
-	background: linear-gradient(45deg, #00ac53, #23c3e0);
 	color: var(--color-menu);
 	line-height: 1.25;
 	text-transform: lowercase;
@@ -431,6 +430,7 @@ main {
 	justify-content: center;
 	flex-wrap: wrap;
 	position: relative;
+	
 }
 
 .last__item--showDeco::before {
@@ -451,4 +451,16 @@ main {
 .last__item:hover,
 .last__item:focus {
 	color: var(--color-menu-hover);
+}
+
+.last__item::before {
+	content: '';
+	width: 60%;
+	height: 25px;
+	background: linear-gradient(45deg, #00ac53, #23c3e0);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform-origin: 0 0;
+	transform: scale3d(0,1,1);
 }

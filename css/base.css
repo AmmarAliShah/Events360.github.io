@@ -2,8 +2,12 @@
 
 body {
   background: linear-gradient(115deg, rgba(0, 0, 0, 1) 5%,rgba(255, 0, 0,1) 95%);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
   font-family: "Times New Roman", Times, serif;
   color: #fff;
+  min-height: 100vh;
 }
 
 #titleRow {
